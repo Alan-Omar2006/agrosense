@@ -1,0 +1,15 @@
+{
+  "name": "agrosense-unidad3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js",
+    "test:conexion": "node prueba-conexion.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}

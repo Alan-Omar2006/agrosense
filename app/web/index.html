@@ -10,13 +10,18 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="marca" href="/" aria-label="AgroSense inicio">
-      <span class="marca-icono" aria-hidden="true">A</span>
-      <span>AgroSense<span class="marca-secundaria">MONITOREO AMBIENTAL</span></span>
-    </a>
-    <div class="estado-conexion" id="estado">Conectando con Supabase…</div>
-  </header>
+  <a class="marca" href="/" aria-label="AgroSense inicio">
+    <span class="marca-icono" aria-hidden="true">A</span>
+    <span>AgroSense<span class="marca-secundaria">MONITOREO AMBIENTAL</span></span>
+  </a>
 
+  <div class="topbar-acciones">
+    <div class="estado-conexion" id="estado">Conectando con Supabase…</div>
+    <form action="/api/auth/logout" method="post" class="form-cerrar-sesion">
+      <button class="boton boton-salir" type="submit">Cerrar sesión</button>
+    </form>
+  </div>
+</header>
   <main class="contenedor">
     <section class="encabezado">
       <div>

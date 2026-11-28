@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acceso al panel de AgroSense Technologies">
+  <title>Iniciar sesión | AgroSense</title>
+  <link rel="stylesheet" href="/estilos.css">
+  <script src="/login.js" defer></script>
+</head>
+<body class="login-pagina">
+  <main class="login-tarjeta">
+    <div class="login-marca">
+      <span class="marca-icono" aria-hidden="true">A</span>
+      <div>
+        <strong>AgroSense</strong>
+        <span class="marca-secundaria">MONITOREO AMBIENTAL</span>
+      </div>
+    </div>
+
+    <p class="sobretitulo">ACCESO AL SISTEMA</p>
+    <h1>Iniciar sesión</h1>
+    <p class="login-descripcion">
+      Ingresa tus credenciales para abrir el panel ambiental.
+    </p>
+
+    <form id="form-login" class="login-formulario">
+      <label for="login-nombre">
+        Nombre de usuario
+        <input
+          id="login-nombre"
+          name="nombre"
+          autocomplete="username"
+          required
+          maxlength="100"
+          autofocus
+        >
+      </label>
+
+      <label for="login-contra">
+        Contraseña
+        <input
+          id="login-contra"
+          name="contra"
+          type="password"
+          autocomplete="current-password"
+          required
+          maxlength="200"
+        >
+      </label>
+
+      <button
+        id="login-submit"
+        class="boton boton-primario"
+        type="submit"
+      >
+        Entrar al panel
+      </button>
+    </form>
+
+    <p
+      id="login-aviso"
+      class="login-aviso"
+      role="alert"
+      aria-live="polite"
+    ></p>
+  </main>
+</body>
+</html>
